@@ -1,6 +1,6 @@
 {
   "name": "dumi-theme-arietta",
-  "version": "1.7.6",
+  "version": "1.0.0",
   "description": "dumi-theme-arietta is a documentation site theme package designed for dumi2. It provides a more beautiful and user-friendly development and reading experience based on @arietta-studio/ui",
   "keywords": [
     "arietta-studio",
@@ -69,9 +69,9 @@
     ]
   },
   "dependencies": {
+    "@arietta-studio/ui": "latest",
     "@floating-ui/react": "^0",
     "@giscus/react": "^2",
-    "@arietta-studio/ui": "latest",
     "ahooks": "^3",
     "antd": "^5",
     "antd-style": "^3",
@@ -88,8 +88,8 @@
     "zustand": "^4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.0.0",
     "@arietta-studio/lint": "latest",
+    "@commitlint/cli": "^18.0.0",
     "@types/lodash-es": "^4",
     "@types/node": "^20",
     "@types/react": "^18",
