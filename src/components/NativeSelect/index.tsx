@@ -195,10 +195,10 @@ const NativeSelect = memo<NativeSelectProps>(
                           key={item.value}
                           label={renderItem ? renderItem(item, index) : item.label}
                           prefixCls={cls}
-                          ref={(node) => {
-                            listReference.current[index] = node;
-                            listContentReference.current[index] = item.label as string;
-                          }}
+                          // ref={(node) => { // TODO: Fix this
+                          //   listReference.current[index] = node;
+                          //   listContentReference.current[index] = item.label as string;
+                          // }}
                           value={item.value}
                           {...getItemProps({
                             onClick() {

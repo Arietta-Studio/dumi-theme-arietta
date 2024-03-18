@@ -72,7 +72,7 @@ export const StoreUpdater = () => {
 
   useSyncState('siteData', siteData, () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { setLoading, ...data } = siteData;
+    const { __, ...data } = siteData;
     const {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       siteData: { setLoading: _, ...previousData },
