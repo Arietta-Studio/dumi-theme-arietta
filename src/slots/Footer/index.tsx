@@ -34,7 +34,7 @@ const Footer = memo(() => {
       bottom={
         mobile ? (
           <Center className={styles.container}>
-            Copyright © 2022-{new Date().getFullYear()}
+            Copyright © {new Date().getFullYear()}
             <Flexbox
               align={'center'}
               dangerouslySetInnerHTML={{ __html: bottomFooter }}
@@ -43,7 +43,7 @@ const Footer = memo(() => {
           </Center>
         ) : (
           <Center horizontal>
-            Copyright © 2022-{new Date().getFullYear()} <Divider type={'vertical'} />
+            Copyright © {new Date().getFullYear()} <Divider type={'vertical'} />
             <span dangerouslySetInnerHTML={{ __html: bottomFooter }} />
           </Center>
         )

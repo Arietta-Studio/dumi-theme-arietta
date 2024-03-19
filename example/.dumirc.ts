@@ -30,16 +30,16 @@ const themeConfig = {
   footer: 'Made with 🤯 by Arietta Studio',
   giscus: {
     category: 'Q&A',
-    categoryId: '', // TODO: Add categoryId
-    repo: 'arietta-studio/arietta-ui',
-    repoId: '', // TODO: Add repoId
+    categoryId: 'DIC_kwDOLh_T2c4CeEoC',
+    repo: 'arietta-studio/dumi-theme-arietta',
+    repoId: 'R_kgDOLh_T2Q',
   },
   name: 'DUMI',
   socialLinks: {
     discord: 'https://discord.gg/',
     github: homepage,
   },
-  title: 'Dumi Theme Arietta Studio',
+  title: 'Arietta Dumi Theme',
 };
 
 export default defineConfig({
@@ -66,5 +66,5 @@ export default defineConfig({
   }`,
   ],
   themeConfig,
-  title: 'Dumi Theme Arietta Studio',
+  title: 'Arietta Dumi Theme',
 });

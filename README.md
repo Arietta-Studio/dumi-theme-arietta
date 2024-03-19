@@ -2,13 +2,13 @@
 
 <div align="center">
 
-<img height="120" src="https://unpkg.com/@arietta-studio/assets-logo@latest/assets/logo-3d.webp">
+<img height="130" src="https://unpkg.com/@arietta-studio/assets-logo@latest/assets/logo-3d.webp">
 <img height="120" src="https://gw.alipayobjects.com/zos/kitchen/qJ3l3EPsdW/split.svg">
 <img height="120" src="https://gw.alipayobjects.com/zos/bmw-prod/d3e3eb39-1cd7-4aa5-827c-877deced6b7e/lalxt4g3_w256_h256.png">
 
-<h1>Dumi Theme Arietta Studio</h1>
+<h1>Arietta Dumi Theme</h1>
 
-dumi-theme-arietta is a documentation site theme package designed for `Dumi 2`. <br/>It provides a more beautiful and user-friendly development and reading experience based on `@arietta-studio/ui`
+dumi-theme-arietta is a documentation site theme package designed for `Dumi 2`. <br/>It provides a more beautiful and user-friendly development and reading experience based on <br/>`@arietta-studio/ui`
 
 [![][npm-release-shield]][npm-release-link]
 [![][github-releasedate-shield]][github-releasedate-link]
@@ -36,6 +36,8 @@ dumi-theme-arietta is a documentation site theme package designed for `Dumi 2`. 
 - [🤯 Usage](#-usage)
 - [⌨️ Local Development](#️-local-development)
 - [🤝 Contributing](#-contributing)
+- [🔗 Links](#-links)
+  - [More Products](#more-products)
 
 ####
 
@@ -105,7 +107,7 @@ interface SiteThemeConfig {
 }
 ```
 
-> **Note**\
+> \[!NOTE]\
 > For detailed configuration, please refer to the [📘 Type file](https://github.com/arietta-studio/dumi-theme-arietta/blob/master/src/types/config.ts) / [📘 Example](https://github.com/arietta-studio/dumi-theme-arietta/blob/master/example/.dumirc.ts).
 
 <div align="right">
@@ -153,7 +155,7 @@ Contributions of all types are more than welcome, if you are interested in contr
 
 ### More Products
 
-- **[🍭 Arietta UI](https://github.com/arietta-studio/arietta-ui)** - An open-source UI component library for building AIGC web apps.
+- **[🍭 Arietta UI](https://github.com/arietta-studio/arietta-ui)** - An open-source UI component library for building amazing web apps.
 
 <div align="right">
 

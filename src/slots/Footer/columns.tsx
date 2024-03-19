@@ -10,7 +10,7 @@ export const getColumns = ({ github }: GetColumnParameters) => {
   const resources: FooterColumn = {
     items: [
       {
-        description: 'AIGC Components',
+        description: 'UI Components',
         openExternal: true,
         title: 'Arietta UI',
         url: 'https://github.com/arietta-studio/arietta-ui',
@@ -69,22 +69,22 @@ export const getColumns = ({ github }: GetColumnParameters) => {
   const more: FooterColumn = {
     items: [
       {
-        description: 'Arietta Chat',
+        description: 'Next-gen chat platform',
         openExternal: true,
         title: '🤖 Arietta Chat',
         url: 'https://github.com/arietta-studio/arietta-chat',
       },
       {
-        description: 'Gen intelligently',
+        description: 'AI Readme Generator',
         openExternal: true,
         title: '📝 Readme Generator',
         url: 'https://readme-wizard.arietta-studio.ai',
       },
       {
-        description: 'AI Commit CLI',
+        description: 'AI-Managed Git Workflows',
         openExternal: true,
-        title: '💌 Arietta Commit',
-        url: 'https://github.com/arietta-studio/arietta-commit',
+        title: '💌 Arietta Compass',
+        url: 'https://github.com/arietta-studio/arietta-compass',
       },
       {
         description: 'AI i18n CLI',
