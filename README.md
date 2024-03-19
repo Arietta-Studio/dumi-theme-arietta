@@ -2,15 +2,16 @@
 
 <div align="center">
 
-<img height="130" src="https://unpkg.com/@arietta-studio/assets-logo@latest/assets/logo-3d.webp">
-<img height="120" src="https://gw.alipayobjects.com/zos/kitchen/qJ3l3EPsdW/split.svg">
-<img height="120" src="https://gw.alipayobjects.com/zos/bmw-prod/d3e3eb39-1cd7-4aa5-827c-877deced6b7e/lalxt4g3_w256_h256.png">
+<img height="195" src="https://unpkg.com/@arietta-studio/assets-logo@latest/assets/logo-3d.webp" style="vertical-align: middle;">
+<img height="120" src="https://gw.alipayobjects.com/zos/kitchen/qJ3l3EPsdW/split.svg" style="vertical-align: middle;">
+<img height="130" src="https://gw.alipayobjects.com/zos/bmw-prod/d3e3eb39-1cd7-4aa5-827c-877deced6b7e/lalxt4g3_w256_h256.png" style="vertical-align: middle;">
 
 <h1>Arietta Dumi Theme</h1>
 
 dumi-theme-arietta is a documentation site theme package designed for `Dumi 2`. <br/>It provides a more beautiful and user-friendly development and reading experience based on <br/>`@arietta-studio/ui`
 
 [![][npm-release-shield]][npm-release-link]
+[![][npm-downloads-shield]][npm-downloads-link]
 [![][github-releasedate-shield]][github-releasedate-link]
 [![][github-action-test-shield]][github-action-test-link]
 [![][github-action-release-shield]][github-action-release-link]<br/>
@@ -195,8 +196,10 @@ This project is [MIT](./LICENSE) licensed.
 [github-releasedate-shield]: https://img.shields.io/github/release-date/arietta-studio/dumi-theme-arietta?labelColor=black&style=flat-square
 [github-stars-link]: https://github.com/arietta-studio/dumi-theme-arietta/network/stargazers
 [github-stars-shield]: https://img.shields.io/github/stars/arietta-studio/dumi-theme-arietta?color=ffcb47&labelColor=black&style=flat-square
-[npm-release-link]: https://www.npmjs.com/package/@arietta-studio/arietta-chat
-[npm-release-shield]: https://img.shields.io/npm/v/@arietta-studio/ariettachat?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
+[npm-downloads-link]: https://www.npmjs.com/package/dumi-theme-arietta
+[npm-downloads-shield]: https://img.shields.io/npm/dt/dumi-theme-arietta?labelColor=black&style=flat-square
+[npm-release-link]: https://www.npmjs.com/package/dumi-theme-arietta
+[npm-release-shield]: https://img.shields.io/npm/v/dumi-theme-arietta?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
 [pr-welcome-link]: https://github.com/arietta-studio/dumi-theme-arietta/pulls
 [pr-welcome-shield]: https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
 [profile-link]: https://github.com/arietta-studio
