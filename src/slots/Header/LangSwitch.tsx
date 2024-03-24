@@ -40,6 +40,7 @@ const languageMap: Record<string, string> = {
   'it-IT': '🇮🇹',
   'jp-JP': '🇯🇵',
   'ko-KR': '🇰🇷',
+  'lt-LT': '🇱🇹',
   'pt-BR': '🇧🇷',
   'ru-RU': '🇷🇺',
   'tr-TR': '🇹🇷',
@@ -48,7 +49,18 @@ const languageMap: Record<string, string> = {
 };
 
 const displayLangMap: Record<string, string> = {
-  'en-US': 'EN',
+  'de-DE': 'de',
+  'en-US': 'en',
+  'es-ES': 'es',
+  'fr-FR': 'fr',
+  'it-IT': 'it',
+  'jp-JP': 'jp',
+  'ko-KR': 'kr',
+  'lt-LT': 'lt',
+  'pt-BR': 'br',
+  'ru-RU': 'ru',
+  'tr-TR': 'tr',
+  'vi-VN': 'vn',
   'zh-CN': '中',
 };
 

@@ -34,6 +34,7 @@ const themeConfig = {
     repo: 'arietta-studio/dumi-theme-arietta',
     repoId: 'R_kgDOLh_T2Q',
   },
+  hideHomeNav: true,
   name: 'DUMI',
   socialLinks: {
     discord: 'https://discord.gg/',
@@ -54,7 +55,10 @@ export default defineConfig({
     'process.env': process.env,
   },
   favicons: ['https://unpkg.com/@arietta-studio/assets-favicons@latest/assets/favicon.ico'],
-  locales: [{ id: 'en-US', name: 'English' }],
+  locales: [
+    { id: 'en-US', name: 'English' },
+    { id: 'lt-LT', name: 'Lietuvių' },
+  ],
   mfsu: isWin ? undefined : {},
   npmClient: 'pnpm',
   ssr: false,

@@ -23,7 +23,7 @@ const ContentTabs = memo<ContentTabsProps>(({ tabs, tabKey: key, onChange }) => 
       className={styles.cls}
       data-page-tabs
       items={[
-        { key: 'default', label: '文档', value: 'default' },
+        { key: 'default', label: 'document', value: 'default' },
         ...tabs.map((tab) => ({
           key: tab.key,
           label: tab.titleIntlId

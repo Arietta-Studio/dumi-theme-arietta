@@ -11,8 +11,8 @@ export interface SelectItemProps {
   value: any;
 }
 
-const SelectItem = memo<SelectItemProps>(
-  forwardRef(
+const SelectItem = memo(
+  forwardRef<HTMLButtonElement, SelectItemProps>(
     (
       { value, label, prefixCls, isSelected, isActive, disabled, ...props },
       reference: ForwardedRef<HTMLButtonElement>,
