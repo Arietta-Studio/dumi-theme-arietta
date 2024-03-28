@@ -27,7 +27,7 @@ const themeConfig = {
     type: 'doc',
   },
   description: 'Arietta UI is an open-source UI component library for building chatbot web apps',
-  footer: 'Made with 🤯 by Arietta Studio',
+  footer: 'footer.credits',
   giscus: {
     category: 'Q&A',
     categoryId: 'DIC_kwDOLh_T2c4CeEoC',

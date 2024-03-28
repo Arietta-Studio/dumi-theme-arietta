@@ -1,6 +1,7 @@
 import { Footer as Foot, FooterProps } from '@arietta-studio/ui';
 import { Divider } from 'antd';
 import { useResponsive } from 'antd-style';
+import { FormattedMessage, useIntl } from 'dumi';
 import isEqual from 'fast-deep-equal';
 import { memo } from 'react';
 import { Center, Flexbox } from 'react-layout-kit';
@@ -17,24 +18,28 @@ const Footer = memo(() => {
   const githubUrl = useSiteStore(githubSel, shallow);
   const { styles, theme } = useStyles();
   const { mobile } = useResponsive();
+  const intl = useIntl();
 
   if (!footer) return;
 
   const columns = footerConfig?.columns
     ? footerConfig?.columns
-    : getColumns({ github: githubUrl || (pkg as any).homepage });
+    : getColumns({ github: githubUrl || (pkg as any).homepage }, intl);
 
   if (footerConfig?.resources) columns[0] = footerConfig?.resources;
   if (footerConfig?.moreProducts) columns[3] = footerConfig?.moreProducts;
 
-  const bottomFooter = footerConfig?.bottom || footer;
+  const bottomFooter = intl.formatMessage({
+    defaultMessage: 'Made with 🤯 by Arietta Studio',
+    id: footerConfig?.bottom?.toString() || footer,
+  });
 
   return (
     <Foot
       bottom={
         mobile ? (
           <Center className={styles.container}>
-            Copyright © {new Date().getFullYear()}
+            <FormattedMessage id="footer.copyright" /> {new Date().getFullYear()}
             <Flexbox
               align={'center'}
               dangerouslySetInnerHTML={{ __html: bottomFooter }}
@@ -43,7 +48,8 @@ const Footer = memo(() => {
           </Center>
         ) : (
           <Center horizontal>
-            Copyright © {new Date().getFullYear()} <Divider type={'vertical'} />
+            <FormattedMessage id="footer.copyright" /> {new Date().getFullYear()}{' '}
+            <Divider type={'vertical'} />
             <span dangerouslySetInnerHTML={{ __html: bottomFooter }} />
           </Center>
         )

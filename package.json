@@ -35,6 +35,7 @@
     "docs:build": "cd example && bun run build",
     "docs:dev": "cd example && bun run dev",
     "doctor": "father doctor",
+    "i18n-md": "arietta-i18n md",
     "lint": "eslint \"{src,example}/**/*.{js,jsx,ts,tsx}\" --fix",
     "lint:md": "remark . --quiet --frail --output",
     "lint:style": "stylelint \"{src,example}/**/*.{js,jsx,ts,tsx}\" --fix",
@@ -72,6 +73,7 @@
     "@arietta-studio/ui": "latest",
     "@floating-ui/react": "^0",
     "@giscus/react": "^2",
+    "@octokit/core": "^6.0.1",
     "ahooks": "^3",
     "antd": "^5",
     "antd-style": "^3",
@@ -112,7 +114,7 @@
     "remark": "^14",
     "remark-cli": "^11",
     "semantic-release": "^21",
-    "stylelint": "^15",
+    "stylelint": "^16",
     "typescript": "^5",
     "vitest": "latest"
   },
@@ -126,5 +128,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "trustedDependencies": [
+    "core-js",
+    "core-js-pure",
+    "dumi-theme-arietta-example"
+  ]
 }

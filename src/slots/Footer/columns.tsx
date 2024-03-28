@@ -2,50 +2,71 @@ import { Icon } from '@arietta-studio/ui';
 import { Link } from 'dumi';
 import { Bug, FileClock, GitFork, Github } from 'lucide-react';
 import { FooterColumn, FooterColumnItem } from 'rc-footer/es/column';
+import { IntlShape } from 'react-intl';
 
 interface GetColumnParameters {
   github?: string;
 }
-export const getColumns = ({ github }: GetColumnParameters) => {
+export const getColumns = ({ github }: GetColumnParameters, intl: IntlShape) => {
   const resources: FooterColumn = {
     items: [
       {
-        description: 'UI Components',
+        description: intl.formatMessage({
+          id: 'footer.resources.uiComponents',
+        }),
         openExternal: true,
-        title: 'Arietta UI',
+        title: intl.formatMessage({
+          id: 'footer.resources.uiComponentsTitle',
+        }),
         url: 'https://github.com/arietta-studio/arietta-ui',
       },
       {
-        description: 'Awesome lint configs',
+        description: intl.formatMessage({
+          id: 'footer.resources.ariettaLint',
+        }),
         openExternal: true,
-        title: 'Arietta Lint',
+        title: intl.formatMessage({
+          id: 'footer.resources.ariettaLintTitle',
+        }),
         url: 'https://github.com/arietta-studio/arietta-lint',
       },
       {
-        description: 'Arietta Dumi Theme',
+        description: intl.formatMessage({
+          id: 'title',
+        }),
         openExternal: true,
-        title: 'Designed for Dumi 2',
+        title: intl.formatMessage({
+          id: 'footer.resources.ariettaDumiTheme',
+        }),
         url: 'https://github.com/arietta-studio/dumi-theme-arietta',
       },
     ],
-    title: 'Resources',
+    title: intl.formatMessage({
+      id: 'footer.resources.title',
+    }),
   };
   const community: FooterColumn = {
     items: [
       github && {
         icon: <Icon icon={Bug} size="small" />,
         openExternal: true,
-        title: 'Report Bug',
+        title: intl.formatMessage({
+          id: 'footer.community.reportBug',
+        }),
         url: `${github}/issues/new/choose`,
       },
       github && {
         icon: <Icon icon={GitFork} size="small" />,
         openExternal: true,
-        title: 'Request Feature',
+        title: intl.formatMessage({
+          id: 'footer.community.requestFeature',
+        }),
         url: `${github}/issues/new/choose`,
       },
     ].filter(Boolean) as FooterColumnItem[],
-    title: 'Community',
+    title: intl.formatMessage({
+      id: 'footer.community.title',
+    }),
   };
 
   const help: FooterColumn = {
@@ -53,47 +74,71 @@ export const getColumns = ({ github }: GetColumnParameters) => {
       github && {
         icon: <Icon icon={Github} size="small" />,
         openExternal: true,
-        title: 'GitHub',
+        title: intl.formatMessage({
+          id: 'footer.help.github',
+        }),
         url: github,
       },
       {
         LinkComponent: Link,
         icon: <Icon icon={FileClock} size="small" />,
-        title: 'Changelog',
+        title: intl.formatMessage({
+          id: 'footer.help.changelog',
+        }),
         url: '/changelog',
       },
     ].filter(Boolean) as FooterColumnItem[],
-    title: 'Help',
+    title: intl.formatMessage({
+      id: 'footer.help.title',
+    }),
   };
 
   const more: FooterColumn = {
     items: [
       {
-        description: 'Next-gen chat platform',
+        description: intl.formatMessage({
+          id: 'footer.moreProducts.ariettaChat',
+        }),
         openExternal: true,
-        title: '🤖 Arietta Chat',
+        title: intl.formatMessage({
+          id: 'footer.moreProducts.ariettaChatTitle',
+        }),
         url: 'https://github.com/arietta-studio/arietta-chat',
       },
       {
-        description: 'AI Readme Generator',
+        description: intl.formatMessage({
+          id: 'footer.moreProducts.readmeGenerator',
+        }),
         openExternal: true,
-        title: '📝 Readme Generator',
+        title: intl.formatMessage({
+          id: 'footer.moreProducts.readmeGeneratorTitle',
+        }),
         url: 'https://readme-wizard.arietta-studio.ai',
       },
       {
-        description: 'AI-Managed Git Workflows',
+        description: intl.formatMessage({
+          id: 'footer.moreProducts.ariettaCompass',
+        }),
         openExternal: true,
-        title: '💌 Arietta Compass',
+        title: intl.formatMessage({
+          id: 'footer.moreProducts.ariettaCompassTitle',
+        }),
         url: 'https://github.com/arietta-studio/arietta-compass',
       },
       {
-        description: 'AI i18n CLI',
+        description: intl.formatMessage({
+          id: 'footer.moreProducts.ariettaI18n',
+        }),
         openExternal: true,
-        title: '🌐 Arietta i18n',
+        title: intl.formatMessage({
+          id: 'footer.moreProducts.ariettaI18nTitle',
+        }),
         url: 'https://github.com/arietta-studio/arietta-i18n',
       },
     ],
-    title: 'More Products',
+    title: intl.formatMessage({
+      id: 'footer.moreProducts.title',
+    }),
   };
 
   return [resources, community, help, more];
