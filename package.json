@@ -70,6 +70,7 @@
     ]
   },
   "dependencies": {
+    "@arietta-studio/arietta-i18n": "^1.0.3",
     "@arietta-studio/ui": "latest",
     "@floating-ui/react": "^0",
     "@giscus/react": "^2",
